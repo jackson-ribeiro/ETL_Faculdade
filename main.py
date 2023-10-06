@@ -1,9 +1,9 @@
 import os
 import pandas as pd
 from dotenv import load_dotenv
-from src.etl.database_connector import connect_to_db
-from src.etl.data_loader import load_and_save
-from src.analysis.query_analysis import (
+from etl_faculdade.etl.database_connector import connect_to_db
+from etl_faculdade.etl.data_loader import load_and_save
+from etl_faculdade.analysis.query_analysis import (
     query_a,
     query_b,
     query_c,
