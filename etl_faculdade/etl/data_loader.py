@@ -15,5 +15,5 @@ def load_and_save(table_name, connection):
     if table_name == "alunos" and "dat_nasc" in data.columns:
         data = convert_date_format(data, "dat_nasc")
 
-    data.to_csv(f"data/{table_name}.csv", index=False)
+    data.to_csv(f"etl_faculdade/data/{table_name}.csv", index=False)
     return data

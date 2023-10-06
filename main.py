@@ -24,7 +24,7 @@ load_dotenv()
 
 def execute_and_save(query, connection, filename):
     df = pd.read_sql(query, connection)
-    df.to_csv(f"data/{filename}.csv", index=False)
+    df.to_csv(f"etl_faculdade/data/{filename}.csv", index=False)
     return df
 
 
